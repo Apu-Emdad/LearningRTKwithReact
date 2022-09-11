@@ -25,10 +25,10 @@ export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
     "https://jsonplaceholder.typicode.com/userss"
   );
   return response.data;
-});
- */
+}); */
+
 const userSlice = createSlice({
-  name: "user",
+  name: "users",
   initialState,
   extraReducers: (builder) => {
     builder.addCase(fetchUsers.pending, (state) => {
